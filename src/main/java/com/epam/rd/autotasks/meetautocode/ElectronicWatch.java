@@ -10,9 +10,8 @@ public class ElectronicWatch {
         int h=seconds/60;
         int m=h%60;
         h=h/60;
-        if(h%24==0) {
-            h = 0;
-            System.out.println(h + "0:0" + m + ":0" + s);
+        if(h%24==0 && m==0 && s==0) {
+            System.out.println("0:0" + m + ":0" + s);
         }
         else if(s<10 && m<10) {
             System.out.println(h+":0"+m+":0"+s);
