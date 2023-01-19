@@ -6,8 +6,9 @@ public class ElectronicWatch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int seconds = scanner.nextInt();
-        int s=seconds%60;
-        int h=seconds/60;
+        int x=seconds%86400;
+        int s=x%60;
+        int h=x/60;
         int m=h%60;
         h=h/60;
         if(h%24==0 && m==0 && s==0) {
