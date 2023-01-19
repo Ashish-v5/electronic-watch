@@ -16,9 +16,9 @@ public class ElectronicWatch {
         }
         else if(s<10 && m<10) {
             System.out.println(h+":0"+m+":0"+s);
-        }else if(s<10 && m>10){
+        }else if(s<10 && m>=10){
             System.out.println(h+":"+m+":0"+s);
-        }else if(s>10 && m<10){
+        }else if(s>=10 && m<10){
             System.out.println(h+":0"+m+":"+s);
         }
         else{
