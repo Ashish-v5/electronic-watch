@@ -23,7 +23,5 @@ public class ElectronicWatch {
         else{
             System.out.println(h+":"+m+":"+s);
         }
-
-
     }
 }
